@@ -1,0 +1,8 @@
+import { mkdirSync, writeFileSync } from "node:fs";
+
+const LINE =
+  "At 2 a.m. in a Lisbon tiled kitchen, a stranger handed me a bowl of caldo verde " +
+  "with a crust of broa, and the sausage oil on my lip felt like being forgiven.";
+
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", LINE);
